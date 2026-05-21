@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modaks Mobilya | Üreticiden Evinize Doğrudan Şıklık</title>
+    <meta name="description" content="Kendi atölyemizden çıkan Modaks tasarımları ile evinize şıklık katın. Çok amaçlı mutfak ve banyo dolapları.">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #2c2c2c;
+            --secondary: #f4f4f4;
+            --text: #555;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text);
+            background-color: #fff;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            font-weight: 400;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            background: #fff;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            text-decoration: none;
+            color: var(--primary);
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            margin: 0 20px;
+            text-decoration: none;
+            color: var(--primary);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #999;
+        }
+
+        /* Hero Banner */
+        .hero {
+            position: relative;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 100%;
+            height: 800px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.85);
+            padding: 50px 60px;
+            max-width: 600px;
+        }
+
+        .hero-content h1 {
+            font-size: 42px;
+            margin: 0 0 15px 0;
+        }
+
+        .hero-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background: var(--primary);
+            color: #fff;
+            text-decoration: none;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #555;
+        }
+
+        /* Featured Section */
+        .featured {
+            padding: 80px 8%;
+            text-align: center;
+            background-color: var(--secondary);
+        }
+
+        .featured h2 {
+            font-size: 32px;
+            margin-bottom: 50px;
+        }
+
+        .grid {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .grid-item {
+            background: #fff;
+            padding: 15px;
+            transition: transform 0.3s;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .grid-item img {
+            width: 100%;
+            max-width: 350px;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .grid-item h3 {
+            font-size: 20px;
+            margin: 20px 0 10px;
+        }
+
+        .grid-item p {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">MODAKS</a>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="hakkimizda.html">Kurumsal</a>
+            <a href="kurulum.html">Kurulum Şemaları</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="banner1.png" alt="Modaks Yeni Sezon Koleksiyonu">
+        <div class="hero-content">
+            <h1>Üreticiden Evinize Doğrudan Şıklık</h1>
+            <p>Kendi atölyemizden çıkan Modaks tasarımlarında lansmana özel indirimleri keşfedin.</p>
+            <a href="#" class="btn">Koleksiyonu Keşfet</a>
+        </div>
+    </section>
+
+    <section class="featured">
+        <h2>Sizin İçin Seçtiklerimiz</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <img src="kare1.png" alt="Modaks Çok Amaçlı Dolap">
+                <h3>Çok Amaçlı Dolap</h3>
+                <p>Evinizin her köşesine uyum sağlar.</p>
+                <a href="#" class="btn" style="padding: 10px 20px;">İncele</a>
+            </div>
+            <div class="grid-item">
+                <img src="kare2.png" alt="Modaks Mutfak Modülü">
+                <h3>Mutfak Modülü</h3>
+                <p>Fonksiyonel ve estetik depolama çözümleri.</p>
+                <a href="#" class="btn" style="padding: 10px 20px;">İncele</a>
+            </div>
+            <div class="grid-item">
+                <img src="kare3.png" alt="Modaks Banyo Dolabı">
+                <h3>Banyo Düzenleyici</h3>
+                <p>Modern banyolar, ferahlık hissi.</p>
+                <a href="#" class="btn" style="padding: 10px 20px;">İncele</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Modaks Mobilya. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>
